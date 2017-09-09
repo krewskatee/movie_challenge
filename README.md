@@ -4,7 +4,7 @@
 ## INTRODUCTION
 -------------------------------------------
 
-It’s your first day on the job working for a small theater (lets call it...AMC River East). The multiplex contains multiple screens, each playing a different movie throughout the day. Managing the schedule can be a difficult task as there are staffing considerations with regard to setup, cleaning, projector operation, ticket sales and line management.
+It’s your first day on the job working for a small theater (lets call it...AMC for fun). The multiplex contains multiple screens, each playing a different movie throughout the day. Managing the schedule can be a difficult task as there are staffing considerations with regard to setup, cleaning, projector operation, ticket sales and line management.
 
 Mildred has been manually doing the schedule to make sure things run smoothly, but she’s planning to retire. Because the theatre is looking to add more screens, and possibly a second location, they’d like to design a system to handle the scheduling rather than rely on a person to do the job. Below are the rules Mildred provided upon being asked exactly how she schedules runtimes for each screen.
 
@@ -48,7 +48,9 @@ The theatre has the following hours of operation.
 
 You will have the user start their program by typing `ruby runner.rb` into the home folder from terminal.
 
-Your system should be able to take in the details of each movie from the movie_list.json file and calculate a start and end time of each showing that abides by all of the provided rules. The runtime of each movie does not include time for previews or cleanup.
+> Side Note: I have built the code using the `Nokogiri` gem that grabs current movies and times from a nearby theater. Do not change the code in `movie_loader.rb`.
+
+Your system should be able to take in the details of each movie from the movie_list.json file then calculate a start and end time of each showing that abides by all of the provided rules. The runtime of each movie does not include time for previews or cleanup, which you must accounted for.
 
 You must store these calculated times in a separate json or CSV file.
 
@@ -71,7 +73,7 @@ Once you complete the ruby app, modify this readme to instruct your users how to
 - examples of what to type in to the terminal
 - examples of what to expect as output to terminal
 
-[Check out these tricks](https://guides.github.com/features/mastering-markdown/) to add formatting to your github markdown file.
+[Check out these tricks](https://guides.github.com/features/mastering-markdown/) to add formatting to your github markdown file. I also recommend using the program `Macdown` to edit your README.md file.
 
 <br>
 <br>
