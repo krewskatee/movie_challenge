@@ -5,7 +5,7 @@ require 'json'
 class MovieLoader
   def compile_todays_list
     # Grabs info from internet
-    list_page = Nokogiri::HTML(open('http://www.fandango.com/amcrivereast21_aaqow/theaterpage'))
+    list_page = Nokogiri::HTML(open('https://www.fandango.com/amcrivereast21_aaqow/theaterpage'))
     collection = []
 
     list_page.css('div.showtimes-movie-container').each do |link|
