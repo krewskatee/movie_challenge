@@ -1,4 +1,5 @@
 require_relative '../config/ruby_manifest.rb'
+require 'json'
 
 class SchedulerController
   attr_reader :load_view, :runner_view, :movie_loader, :today
@@ -29,9 +30,9 @@ class SchedulerController
       user_choice = gets.chomp
 
       if user_choice == 'end'
-        exit_program 
+        exit_program
       end
-    end    
+    end
   end
 
   def exit_program
